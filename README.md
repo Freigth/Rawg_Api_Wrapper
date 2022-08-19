@@ -41,8 +41,6 @@ Ex: Rawg::Client.creator_roles
 
 ## 📌 **Most of the API required an ID or Game_PK else it won't return a response**
 <br>
-<br>
-<br>
 
 ### Here are the list of the available API's
 **Creator** 
