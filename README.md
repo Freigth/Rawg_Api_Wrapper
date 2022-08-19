@@ -23,7 +23,7 @@
 Ex: response = Rawg::Client.creator_roles
 > This returns an API for creator roles
 <br>
-<br>
+
 
 ## **View a specific details by passing an ID or Game_PK**
 1. Just pass an ID or name on Game_PK 
@@ -31,13 +31,13 @@ Ex: response = Rawg::Client.creator_roles
 Ex: response = Rawg::Client.creator_details(*ID*)
 > This returns an API details of specific creator
 <br>
-<br>
+
 
 ## 📌 **All the called API's are returning a status message**
 Ex: Rawg::Client.creator_roles
 > Returns "Success!" if status is 200 and so on..
 <br>
-<br>
+
 
 ## 📌 **Most of the API required an ID or Game_PK else it won't return a response**
 <br>
