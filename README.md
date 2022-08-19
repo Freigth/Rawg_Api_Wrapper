@@ -2,8 +2,8 @@
 
 <h1>Rawg API Documentation<h1>
 
-## Gems used:
-### **httparty**
+<h2> Gems used: </h2>
+<h3> <strong> httparty </strong> </h3>
 
 ## Third party API:
 ### **rawg.io**
