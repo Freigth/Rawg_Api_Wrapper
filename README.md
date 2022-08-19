@@ -1,6 +1,6 @@
 # README
 
-# Rawg API Documentation
+<h1>Rawg API Documentation<h1>
 
 ## Gems used:
 ### **httparty**
