@@ -44,19 +44,17 @@
 
 ### Here are the list of the available API's
 ### **Creator** 
-<br>
-
 ### Rawg::Cient.creator-roles
 ### Rawg::Client.creators
 ### Rawg::Client.creators(ID)
-### **Developer**
 <br>
 
+### **Developer**
 ### Rawg::Client.developers
 ### Rawg::Client.developers(ID)
-### **Game**
 <br>
 
+### **Game**
 ### Rawg::Client.games
 ### Rawg::Client.game_additions(GAME_PK)
 ### Rawg::Client.game_creators(GAME_PK)
@@ -71,29 +69,29 @@
 ### Rawg::Client.game_suggested(ID)
 ### Rawg::Client.game_twitch(ID)
 ### Rawg::Client.game_youtube(ID)
-### **Genre**
 <br>
 
+### **Genre**
 ### Rawg::Client.genres
 ### Rawg::Client.creator_details(ID)
-### **Platform**
 <br>
 
+### **Platform**
 ### Rawg::Client.platforms
 ### Rawg::Client.platform_parent
 ### Rawg::Client.platform_details(ID)
-### **Publisher**
 <br>
 
+### **Publisher**
 ### Rawg::Client.publishers
 ### Rawg::Client.publisher_details(ID)
-### **Store**
 <br>
 
+### **Store**
 ### Rawg::Client.stores
 ### Rawg::Client.store_details(ID)
-### **Tag**
 <br>
 
+### **Tag**
 ### Rawg::Client.tag
 ### Rawg::Client.tag_details(ID)

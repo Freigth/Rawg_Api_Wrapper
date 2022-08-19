@@ -1,7 +1,6 @@
 require 'httparty'
 
 class RawgController < ApplicationController
-  before_action :call_request
   def creator_roles
     response = Rawg::Client.creator_roles
     render json: response
@@ -170,11 +169,5 @@ class RawgController < ApplicationController
     # must pass an id to work via params or manually
     response = Rawg::Client.tag_details(params[:id])
     render json: response
-  end
-
-  private
-
-  def call_request
-    Rawg::Request.new
   end
 end

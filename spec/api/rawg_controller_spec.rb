@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 describe RawgController, type: :controller do
-  before :each do
-    Rawg::Request.new
-  end
 
   describe 'GET creator_roles' do
     it 'should return parsed json as response' do

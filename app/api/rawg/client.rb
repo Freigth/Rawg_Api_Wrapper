@@ -2,185 +2,275 @@ require 'httparty'
 
 module Rawg
   class Client
+    # GET https://api.rawg.io/api/creator-roles
     def self.creator_roles
-      response = Rawg::Creator.creator_roles
+      response = Rawg::Request.call('creator-roles')
       # Check if there's an error
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/creators
     def self.creators
-      response = Rawg::Creator.creators
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('creators')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.creator_details(id)
-      response = Rawg::Creator.creator_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/creators/{id}
+    def self.creator_details(_id)
+      response = Rawg::Request.call('creators', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/developers
     def self.developers
-      response = Rawg::Developer.developers
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('developers')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.developer_details(id)
-      response = Rawg::Developer.developer_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/developers/{id}
+    def self.developer_details(_id)
+      response = Rawg::Request.call('developers', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/games
     def self.games
-      response = Rawg::Game.games
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('games')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_additions(game_pk)
-      response = Rawg::Game.game_additions(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/additions
+    def self.game_additions(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'additions')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_creators(game_pk)
-      response = Rawg::Game.game_creators(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/development-team
+    def self.game_creators(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'development-team')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_series(game_pk)
-      response = Rawg::Game.game_series(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/game-series
+    def self.game_series(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'game-series')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_parent(game_pk)
-      response = Rawg::Game.game_parent(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/parent-games
+    def self.game_parent(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'parent-games"')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_screenshots(game_pk)
-      response = Rawg::Game.game_screenshots(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/screenshots
+    def self.game_screenshots(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'screenshots')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_stores(game_pk)
-      response = Rawg::Game.game_stores(game_pk)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{game_pk}/stores
+    def self.game_stores(_game_pk)
+      response = Rawg::Request.call('games', _game_pk, 'stores')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_details(id)
-      response = Rawg::Game.game_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}
+    def self.game_details(_id)
+      response = Rawg::Request.call('games', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_achievements(id)
-      response = Rawg::Game.game_achievements(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/achievements
+    def self.game_achievements(_id)
+      response = Rawg::Request.call('games', _id, 'achievements')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_trailers(id)
-      response = Rawg::Game.game_trailers(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/movies
+    def self.game_trailers(_id)
+      response = Rawg::Request.call('games', _id, 'movies')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_most_recent_posts(id)
-      response = Rawg::Game.game_most_recent_posts(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/reddit
+    def self.game_most_recent_posts(_id)
+      response = Rawg::Request.call('games', _id, 'reddit')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_suggested(id)
-      response = Rawg::Game.game_suggested(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/suggested
+    def self.game_suggested(_id)
+      response = Rawg::Request.call('games', _id, 'suggested')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_twitch(id)
-      response = Rawg::Game.game_twitch(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/twitch
+    def self.game_twitch(_id)
+      response = Rawg::Request.call('games', _id, 'twitch')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.game_youtube(id)
-      response = Rawg::Game.game_youtube(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/games/{id}/youtube
+    def self.game_youtube(_id)
+      response = Rawg::Request.call('games', _id, 'youtube')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/genres
     def self.genres
-      response = Rawg::Genre.genres
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('genres')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.genre_details(id)
-      response = Rawg::Genre.genre_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/genres/{id}
+    def self.genre_details(_id)
+      response = Rawg::Request.call('genres', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/platforms
     def self.platforms
-      response = Rawg::Platform.platforms
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('platforms')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/platforms/lists/parents
     def self.platform_parent
-      response = Rawg::Platform.platform_parent
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('platforms/lists/parents')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.platform_details(id)
-      response = Rawg::Platform.platform_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/platforms/{id}
+    def self.platform_details(_id)
+      response = Rawg::Request.call('platforms', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/publishers
     def self.publishers
-      response = Rawg::Publisher.publishers
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('publishers')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.publisher_details(id)
-      response = Rawg::Publisher.publisher_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/publishers/{id}
+    def self.publisher_details(_id)
+      response = Rawg::Request.call('publishers', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/stores
     def self.stores
-      response = Rawg::Store.stores
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('stores')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.store_details(id)
-      response = Rawg::Store.stores_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/stores/{id}
+    def self.store_details(_id)
+      response = Rawg::Request.call('stores', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
+    # GET https://api.rawg.io/api/tags
     def self.tag
-      response = Rawg::Tag.tags
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+      response = Rawg::Request.call('tags')
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
 
-    def self.tag_details(id)
-      response = Rawg::Tag.tag_details(id)
-      Rawg::Errors.error(response.code)
-      JSON.parse(response.body)
+    # GET https://api.rawg.io/api/tags/{id}
+    def self.tag_details(_id)
+      response = Rawg::Request.call('tags', _id)
+      unless response.nil?
+        Rawg::Errors.error(response.code)
+        JSON.parse(response.body)
+      end
     end
   end
 end
