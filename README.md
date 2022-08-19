@@ -46,54 +46,62 @@ Ex: Rawg::Client.creator_roles
 
 ### Here are the list of the available API's
 **Creator** 
+<br>
 Rawg::Cient.creator-roles
+<br>
 Rawg::Client.creators
+<br>
 Rawg::Client.creators(ID)
+<br>
 <br>
 
 **Developer**
+<br>
 Rawg::Client.developers
+<br>
 Rawg::Client.developers(ID)
+<br>
 <br>
 
 **Game**
-Rawg::Client.games
-Rawg::Client.game_additions(GAME_PK)
-Rawg::Client.game_creators(GAME_PK)
-Rawg::Client.game_series(GAME_PK)
-Rawg::Client.game_parent(GAME_PK)
-Rawg::Client.game_screenshots(GAME_PK)
-Rawg::Client.game_stores(GAME_PK)
-Rawg::Client.game_details(ID)
-Rawg::Client.game_achievements(ID)
-Rawg::Client.game_trailers(ID)
-Rawg::Client.game_most_recent_posts(ID)
-Rawg::Client.game_suggested(ID)
-Rawg::Client.game_twitch(ID)
-Rawg::Client.game_youtube(ID)
 <br>
+Rawg::Client.games<br>
+Rawg::Client.game_additions(GAME_PK)<br>
+Rawg::Client.game_creators(GAME_PK)<br>
+Rawg::Client.game_series(GAME_PK)<br>
+Rawg::Client.game_parent(GAME_PK)<br>
+Rawg::Client.game_screenshots(GAME_PK)<br>
+Rawg::Client.game_stores(GAME_PK)<br>
+Rawg::Client.game_details(ID)<br>
+Rawg::Client.game_achievements(ID)<br>
+Rawg::Client.game_trailers(ID)<br>
+Rawg::Client.game_most_recent_posts(ID)<br>
+Rawg::Client.game_suggested(ID)<br>
+Rawg::Client.game_twitch(ID)<br>
+Rawg::Client.game_youtube(ID)<br>
+<br><br>
 
-**Genre**
-Rawg::Client.genres
-Rawg::Client.creator_details(ID)
-<br>
+**Genre**<br>
+Rawg::Client.genres<br>
+Rawg::Client.creator_details(ID)<br>
+<br><br>
 
-**Platform**
-Rawg::Client.platforms
-Rawg::Client.platform_parent
-Rawg::Client.platform_details(ID)
-<br>
+**Platform**<br>
+Rawg::Client.platforms<br>
+Rawg::Client.platform_parent<br>
+Rawg::Client.platform_details(ID)<br>
+<br><br>
 
-**Publisher**
-Rawg::Client.publishers
-Rawg::Client.publisher_details(ID)
-<br>
+**Publisher**<br>
+Rawg::Client.publishers<br>
+Rawg::Client.publisher_details(ID)<br>
+<br><br>
 
-**Store**
-Rawg::Client.stores
-Rawg::Client.store_details(ID)
-<br>
+**Store**<br>
+Rawg::Client.stores<br>
+Rawg::Client.store_details(ID)<br>
+<br><br>
 
-**Tag**
-Rawg::Client.tag
-Rawg::Client.tag_details(ID)
+**Tag**<br>
+Rawg::Client.tag<br>
+Rawg::Client.tag_details(ID)<br>
