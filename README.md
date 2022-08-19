@@ -21,7 +21,10 @@
 ## **How to use the API?**
 1. Just call Rawg::Client::<*the api you want to fetch*>
 <br>
+
 Ex: response = Rawg::Client.creator_roles
+<br>
+
 > This returns an API for creator roles
 <br>
 
@@ -30,14 +33,20 @@ Ex: response = Rawg::Client.creator_roles
 1. Just pass an ID or name on Game_PK 
 ⚠️ **ONLY GAME_PK ACCEPS AN STRING** ⚠️
 <br>
+
 Ex: response = Rawg::Client.creator_details(*ID*)
+<br>
+
 > This returns an API details of specific creator
 <br>
 
 
 ## 📌 **All the called API's are returning a status message**
 <br>
+
 Ex: Rawg::Client.creator_roles
+<br>
+
 > Returns "Success!" if status is 200 and so on..
 <br>
 
