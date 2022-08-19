@@ -4,12 +4,14 @@
 
 
 ## Gems used:
-### **httparty**
-
+ **httparty**
+<br>
+<br>
 
 ## Third party API:
 ### **rawg.io**
-
+<br>
+<br>
 
 ## **Free to use**
 ## **Token Included**
