@@ -24,8 +24,8 @@ Ex: response = `Rawg::Client.creator_roles`<br>
 > This returns an API for creator roles<br>
 
 ## **View a specific details by passing an ID or Game_PK**
-1. Just pass an ID or Game_PK <br>
 ⚠️ **ONLY GAME_PK ACCEPS AN STRING AND INTEGER** ⚠️<br>
+1. Just pass an ID or Game_PK <br>
 Ex: response = `Rawg::Client.creator_details(*ID*)`<br>
 > This returns an API details of specific creator<br>
 
