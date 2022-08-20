@@ -11,7 +11,14 @@ describe Rawg::Client do
   end
 
   it 'should return a response when game_pk is passed' do
-    response = Rawg::Game.game_additions(1)
+    game_pk = 1
+    response = Rawg::Client.game_additions(game_pk)
+    expect(response.nil?).to be(false)
+  end
+
+  it 'should return a response when game_pk is a string' do
+    game_pk = 'grand-theft-auto-v'
+    response = Rawg::Client.game_creators(game_pk)
     expect(response.nil?).to be(false)
   end
 
