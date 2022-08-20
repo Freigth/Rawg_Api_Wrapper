@@ -57,25 +57,25 @@ Ex: Rawg::Client.creator_roles
 ### Here are the list of the available API's
 **Creator** 
 <br>
-Rawg::Cient.creator-roles
+.creator-roles
 <br>
-Rawg::Client.creators
+.creators
 <br>
-Rawg::Client.creators(ID)
+.creators(ID)
 <br>
 
 
 **Developer**
 <br>
-Rawg::Client.developers
+.developers
 <br>
-Rawg::Client.developers(ID)
+.developers(ID)
 <br>
 
 
 **Game**
 <br>
-Rawg::Client
+
 .games<br>
 .game_additions(GAME_PK)<br>
 .game_creators(GAME_PK)<br>
@@ -93,26 +93,26 @@ Rawg::Client
 <br>
 
 **Genre**<br>
-Rawg::Client.genres<br>
+.genres<br>
 .creator_details(ID)<br>
 <br>
 
 **Platform**<br>
-Rawg::Client.platforms<br>
+.platforms<br>
 .platform_parent<br>
 .platform_details(ID)<br>
 <br>
 
 **Publisher**<br>
-Rawg::Client.publishers<br>
+.publishers<br>
 .publisher_details(ID)<br>
 <br>
 
 **Store**<br>
-Rawg::Client.stores<br>
+.stores<br>
 .store_details(ID)<br>
 <br>
 
 **Tag**<br>
-Rawg::Client.tag<br>
+.tag<br>
 .tag_details(ID)<br>
