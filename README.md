@@ -11,8 +11,9 @@
 **rawg.io**<br>
 <br>
 
-📌**Free to use**<br>
-📌**Token Included**<br>
+### Why you should use my API wrapper?<br>
+- 📌**Free to use**<br>
+- 📌**Token Included**<br>
 
 ## **How to use the API?**
 1. Just call Rawg::Client::<*the api you want to fetch*><br>
