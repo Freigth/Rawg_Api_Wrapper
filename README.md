@@ -75,7 +75,6 @@ Ex: Rawg::Client.creator_roles
 
 **Game**
 <br>
-
 .games<br>
 .game_additions(GAME_PK)<br>
 .game_creators(GAME_PK)<br>
