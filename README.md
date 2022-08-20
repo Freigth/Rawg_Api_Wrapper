@@ -4,19 +4,15 @@
 
 
 ### Gems used:
- **httparty**
-<br>
+ **httparty**<br>
 <br>
 
 ### Third party API:
-**rawg.io**
-<br>
+**rawg.io**<br>
 <br>
 
-### **Free to use**
-### **Token Included**
-<br>
-<br>
+📌**Free to use**<br>
+📌**Token Included**<br>
 
 ## **How to use the API?**
 1. Just call Rawg::Client::<*the api you want to fetch*><br>
