@@ -22,7 +22,7 @@
 1. Just call Rawg::Client::<*the api you want to fetch*>
 <br>
 
-Ex: response = Rawg::Client.creator_roles
+Ex: response = `Rawg::Client.creator_roles`
 <br>
 
 > This returns an API for creator roles
@@ -34,7 +34,7 @@ Ex: response = Rawg::Client.creator_roles
 ⚠️ **ONLY GAME_PK ACCEPS AN STRING AND INTEGER** ⚠️
 <br>
 
-Ex: response = Rawg::Client.creator_details(*ID*)
+Ex: response = `Rawg::Client.creator_details(*ID*)`
 <br>
 
 > This returns an API details of specific creator
@@ -44,7 +44,7 @@ Ex: response = Rawg::Client.creator_details(*ID*)
 ## 📌 **All the called API's are returning a status message**
 <br>
 
-Ex: Rawg::Client.creator_roles
+Ex: `Rawg::Client.creator_roles`
 <br>
 
 > Returns "Success!" if status is 200 and so on..
@@ -55,63 +55,48 @@ Ex: Rawg::Client.creator_roles
 <br>
 
 ### Here are the list of the available API's
-**Creator** 
-<br>
-.creator-roles
-<br>
-.creators
-<br>
-.creators(ID)
-<br>
+**Creator** <br>
+`.creator-roles`<br>
+`.creators`<br>
+`.creators(ID)`<br>
 
+**Developer**<br>
+`.developers`<br>
+`.developers(ID)`<br>
 
-**Developer**
-<br>
-.developers
-<br>
-.developers(ID)
-<br>
-
-
-**Game**
-<br>
-.games<br>
-.game_additions(GAME_PK)<br>
-.game_creators(GAME_PK)<br>
-.game_series(GAME_PK)<br>
-.game_parent(GAME_PK)<br>
-.game_screenshots(GAME_PK)<br>
-.game_stores(GAME_PK)<br>
-.game_details(ID)<br>
-.game_achievements(ID)<br>
-.game_trailers(ID)<br>
-.game_most_recent_posts(ID)<br>
-.game_suggested(ID)<br>
-.game_twitch(ID)<br>
-.game_youtube(ID)<br>
-<br>
+**Game**<br>
+`.games`<br>
+`.game_additions(GAME_PK)`<br>
+`.game_creators(GAME_PK)`<br>
+`.game_series(GAME_PK)`<br>
+`.game_parent(GAME_PK)`<br>
+`.game_screenshots(GAME_PK)`<br>
+`.game_stores(GAME_PK)`<br>
+`.game_details(ID)`<br>
+`.game_achievements(ID)`<br>
+`.game_trailers(ID)`<br>
+`.game_most_recent_posts(ID)`<br>
+`.game_suggested(ID)`<br>
+`.game_twitch(ID)`<br>
+`.game_youtube(ID)`<br>
 
 **Genre**<br>
-.genres<br>
-.creator_details(ID)<br>
-<br>
+`.genres`<br>
+`.creator_details(ID)`<br>
 
 **Platform**<br>
-.platforms<br>
-.platform_parent<br>
-.platform_details(ID)<br>
-<br>
+`.platforms`<br>
+`.platform_parent`<br>
+`.platform_details(ID)`<br>
 
 **Publisher**<br>
-.publishers<br>
-.publisher_details(ID)<br>
-<br>
+`.publishers`<br>
+`.publisher_details(ID)`<br>
 
 **Store**<br>
-.stores<br>
-.store_details(ID)<br>
-<br>
+`.stores`<br>
+`.store_details(ID)`<br>
 
 **Tag**<br>
-.tag<br>
-.tag_details(ID)<br>
+`.tag`<br>
+`.tag_details(ID)`<br>
