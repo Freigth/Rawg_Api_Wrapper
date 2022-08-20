@@ -19,40 +19,21 @@
 <br>
 
 ## **How to use the API?**
-1. Just call Rawg::Client::<*the api you want to fetch*>
-<br>
-
-Ex: response = `Rawg::Client.creator_roles`
-<br>
-
-> This returns an API for creator roles
-<br>
-
+1. Just call Rawg::Client::<*the api you want to fetch*><br>
+Ex: response = `Rawg::Client.creator_roles`<br>
+> This returns an API for creator roles<br>
 
 ## **View a specific details by passing an ID or Game_PK**
 1. Just pass an ID or Game_PK <br>
-⚠️ **ONLY GAME_PK ACCEPS AN STRING AND INTEGER** ⚠️
-<br>
+⚠️ **ONLY GAME_PK ACCEPS AN STRING AND INTEGER** ⚠️<br>
+Ex: response = `Rawg::Client.creator_details(*ID*)`<br>
+> This returns an API details of specific creator<br>
 
-Ex: response = `Rawg::Client.creator_details(*ID*)`
-<br>
+## 📌 **All the called API's are returning a status message**<br>
+Ex: `Rawg::Client.creator_roles`<br>
+> Returns "Success!" if status is 200 and so on..<br>
 
-> This returns an API details of specific creator
-<br>
-
-
-## 📌 **All the called API's are returning a status message**
-<br>
-
-Ex: `Rawg::Client.creator_roles`
-<br>
-
-> Returns "Success!" if status is 200 and so on..
-<br>
-
-
-## 📌 **Most of the API required an ID or Game_PK else it won't return a response**
-<br>
+## 📌 **Most of the API required an ID or Game_PK else it won't return a response**<br>
 
 ### Here are the list of the available API's
 **Creator** <br>
