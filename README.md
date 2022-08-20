@@ -30,8 +30,8 @@ Ex: response = Rawg::Client.creator_roles
 
 
 ## **View a specific details by passing an ID or Game_PK**
-1. Just pass an ID or name on Game_PK 
-⚠️ **ONLY GAME_PK ACCEPS AN STRING** ⚠️
+1. Just pass an ID or Game_PK 
+⚠️ **ONLY GAME_PK ACCEPS AN STRING AND INTEGER** ⚠️
 <br>
 
 Ex: response = Rawg::Client.creator_details(*ID*)
