@@ -4,7 +4,7 @@
 
 
 ### Gems used:
-`gem "**httparty**"`<br>
+`gem "httparty"`<br>
 <br>
 
 ### Third party API used:
