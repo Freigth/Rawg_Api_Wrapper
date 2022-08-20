@@ -4,10 +4,10 @@
 
 
 ### Gems used:
- **httparty**<br>
+`gem "**httparty**"`<br>
 <br>
 
-### Third party API:
+### Third party API used:
 **rawg.io**<br>
 <br>
 
@@ -15,8 +15,9 @@
 - 📌**Free to use**<br>
 - 📌**Token Included**<br><br>
 
-### **How to use the API?**
-1. Just call `Rawg::Client::<*the api you want to fetch*>`<br>
+### **How to use the API?**<br>
+1. `bundle install`
+2. Just call `Rawg::Client::<*the api you want to fetch*>`<br>
 Ex: response = `Rawg::Client.creator_roles`<br>
 > This returns an API for creator roles<br>
 <br>
